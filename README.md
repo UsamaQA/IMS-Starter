@@ -120,8 +120,15 @@ Intergration testing is a level of software testing where individual units / com
 
 
 ## Deployment
-
-Add additional notes about how to deploy this on a live system
+To create the fat.jar file:
+1. Open CMD (Or any command line intereface) 
+2. Make sure working directory is on the folder IMS (or whatever you have named it) 
+3. In command line type `mvn lean package`
+	This will run the run tests and create a file for you. 	
+	At this stage, if you have any Tests that have failed or have test issues, you will get a `Build Error`
+4. Locate to the new folder created in `IMS-Starter` named `target`
+5. To run `.jar` file, open cmd and enter `java -jar <your file path to jar file>`
+This should have run your project on the command line. 
 
 ## Built With
 
